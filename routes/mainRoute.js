@@ -8,7 +8,8 @@ router.get("/", mainController.getMain)
 router.get("/login", authController.getLogin)
 router.get("/shop", mainController.getShop)
 router.get("/content", mainController.getContent)
-
+router.get("/signup", mainController.getSignup)
+router.post("/signup", authController.postSignup)
 
 
 module.exports = router;
