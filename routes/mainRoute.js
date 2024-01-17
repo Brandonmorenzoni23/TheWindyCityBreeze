@@ -6,9 +6,10 @@ const authController = require('../controllers/authController')
 //Main Routes
 router.get("/", mainController.getMain)
 router.get("/login", authController.getLogin)
+router.post("/login", authController.postLogin)
 router.get("/shop", mainController.getShop)
 router.get("/content", mainController.getContent)
-router.get("/signup", mainController.getSignup)
+router.get("/signup", authController.getSignup)
 router.post("/signup", authController.postSignup)
 
 

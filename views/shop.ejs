@@ -1,3 +1,16 @@
 <%- include('partials/header') -%>
 
 <h1>Time To Shop!!</h1>
+<a href="/product">product</a>
+
+<ul>
+    <% for(var i=0; i<products.length; i++) {%>
+      <li >
+        <a href="/product/<%= products[i]._id%>">
+          <p>name: <%= products.name %></p>
+          <h2>photo</h2>
+          <p>description: <%= products.description %></p>
+        </a>
+      </li>
+    <% } %>
+</ul>
