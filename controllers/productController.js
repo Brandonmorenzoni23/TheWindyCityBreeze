@@ -5,12 +5,12 @@ const product = require("../models/product");
 // GET REQUEST
 exports.getProduct = async (req, res) => {
   try {
-    const products = await product.find();
-    res.render("profile.ejs", {products: products});
+    const products = await product.findById(req.params.id);
+    res.render("product.ejs", {products: products});
   } catch (err) {
     console.log(err);
   }
-  };
+}
 
 
 // POST REQUEST

@@ -1,16 +1,25 @@
 const passport = require("passport");
-const User = require("../models/User");
+const user = require("../models/User");
+const product = require("../models/product")
 
 
 module.exports = {
-    getMain: (req, res) => {
-      res.render("homepage.ejs");
+    getMain: async (req, res) => {
+      const users = await user.find({ user: req.user  })
+      res.render("homepage.ejs", {users: users});
     },
-    getShop: (req, res) => {
-      res.render("shop.ejs");
+    getShop: async (req, res) => {
+      try {
+        const products = await product.find();
+        res.render("shop.ejs", {products: products});
+      } catch (err) {
+        console.log(err);
+      }
     },
     getContent: (req, res) => {
       res.render("content.ejs");
     },
-
+    getCart: (req, res) => {
+      res.render("cart.ejs");
+    },
 };
