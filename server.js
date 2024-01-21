@@ -29,7 +29,7 @@ require("./config/passport");
 connectDB({});
 
 //Static Folder
-app.use(express.static("/TheWindyCityBreeze/server/public"));
+app.use(express.static("public"));
 
 // Setup Sessions - stored in MongoDB
 app.use(
