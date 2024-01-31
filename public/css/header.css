@@ -1,34 +1,49 @@
 *{
-   margin: 0;
-   padding: 0;
    box-sizing: border-box;
-   background-color: ; 
+  background-color: darkblue; 
 }
 /* Header */
 .header-box {
 display: flex;
 flex-direction: row;
-height: 50px;
-box-shadow: 5px;
+height: 70px;
+box-shadow: 2px;
+margin-bottom: 4%;
+}
+
+.header-name-container{
+    display: flex;
+}
+
+.header-icon{
+    display:flex;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    height: 125px;
+    justify-content: center;
+
 }
 
 .logo-btn{
     background-color: transparent;
     border: none;
-    display: flex;
     text-decoration: none;
     color: blue;
-    margin-top: 2%;
+    -webkit-text-stroke: .5px ;
+    font-size: 70px;
+    font-weight: 800;
+
 }
 
 .header-btn {
     display: flex;
     text-decoration: none;
-    color: blue;
-    -webkit-text-stroke: 1px white;
+    color: white;
+    -webkit-text-stroke: .5px #3399FF;
     font-size: 20px;
     font-weight: 600;
     justify-content: space-evenly;
+    margin-top: 6%;
 }
 
 button{
@@ -37,28 +52,69 @@ button{
 }
 
 .btn-container{
-    margin-top: 1%;
-    margin-left: 25%;
+    margin-top: 2%;
+    margin-left: 21%;
 }
 
 
 /*homepage*/
 
+.main-page-content{
+display: flex;
+flex-direction: row;
+}
+
+.main-quote{
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    height: 800px;
+    width: 800px;
+    margin-top: 15%;
+    padding: 0 0 15% 10%;
+    color: #FEFDFD;
+    -webkit-text-stroke: 1px #3399FF;
+}
+
+.background-img{
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    width: 45%;
+    height: 45%;
+    margin-left: 10%;
+    margin-top: 10%;
+    border: 3px solid #FFF;
+    border-radius: 5%;
+}
+
 /*carousel*/
+/*what img is showing*/
+#first-img{
+    display:flex;
+}
+#second-img{
+    display:none;
+}
+#third-img{
+    display:none;
+}
 
 .slider-nav{
     display: flex;
     position: relative;
-    max-width: 48rem;
+    width: 100%;
+    height: 30rem;
     margin: 0 auto;
     aspect-ratio: 16/9;
-    overflow-x: auto;
+    overflow-x: hidden;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     box-shadow: 0 1.5rem 3rem -0.75rem black;
-    border-radius: 5%;
+    border: 2px solid #fff;
 
 }
+
 
 .slide-cover{
     flex: 1 0 100%;
@@ -67,6 +123,7 @@ button{
 }
 
 .scroll-container{
+    background-color: transparent;
     display: flex;
     column-gap: 1rem;
     position: absolute;
@@ -87,5 +144,38 @@ button{
 
 .scroll-btn:hover{
     opacity: 1;
-    background-color: aliceblue;
+    background-color: blue;
+}
+
+
+/*content*/
+
+#main-vid{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid white;
+    border-radius: 10%;
+    margin-left: 25%;
+}
+
+/*Login*/
+
+.login-header{
+    justify-content: center;
+    align-items: center;
+    margin-left: 45%;
+    -webkit-text-stroke: .5px white;
+    color: blue;
+}
+
+.login-container{
+    background-color: #fff;
+    border: 2px solid blue;
+    border-radius: 10%;
+    justify-content: center;
+    align-items: center;
+    margin-left: 33%;
+    width: 33%;
+    height: 400px;
 }

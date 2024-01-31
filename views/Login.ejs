@@ -1,10 +1,11 @@
 <%- include('partials/header') -%>
 
-<h1>LOG IN OR ELSE!</h1>
+<h1 class="login-header">Log In</h1>
 
-<form action="/login" method="POST">
+<div class="login-container">
+  <form action="/login" method="POST">
     <div class="mb-3">
-      <label for="exampleInputEmail1" class="form-label"
+      <label for="exampleInputEmail1"
         >Email address</label
       >
       <input
@@ -15,8 +16,8 @@
         name="email"
       />
     </div>
-    <div class="mb-3">
-      <label for="exampleInputPassword1" class="form-label">Password</label>
+    <div class="">
+      <label for="exampleInputPassword1" >Password</label>
       <input
         type="password"
         class="form-control"
@@ -29,3 +30,4 @@
 
   <h2>Haven't signed up yet?</h2>
   <button><a href="/signup">Sign Up</a></button>
+</div>
