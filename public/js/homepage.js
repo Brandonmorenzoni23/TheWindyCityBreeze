@@ -4,6 +4,7 @@ document.getElementById('third-btn').addEventListener('click', thirdImg)
 
 
 
+
 function firstImg(){
     console.log("showing first img!")
     document.getElementById('second-img').style.display = 'none'

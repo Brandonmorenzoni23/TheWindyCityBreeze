@@ -2,13 +2,13 @@
 
 <h1>Time To Shop!!</h1>
 
-<ul>
+<ul class="all-items">
     <% for(var i=0; i<products.length; i++) {%>
-      <li >
-        <a href="/product/<%= products[i]._id%>">
-          <p>name: <%= products[i].name %></p>
-          <h2>photo</h2>
-          <p>description: <%= products[i].description %></p>
+      <li class="list-items">
+        <a href="/product/<%= products[i]._id%>" class="each-item">
+          <h2 class="photo-of-item">photo</h2>
+          <p class="name-of-item"><%= products[i].name %></p>
+          <p class="des-of-item"><%= products[i].description %></p>
         </a>
       </li>
     <% } %>
