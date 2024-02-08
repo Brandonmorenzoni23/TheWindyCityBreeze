@@ -1,9 +1,13 @@
 <%- include('partials/hompageHeader') -%>
 
+<%if(users.id){ %>
+    <p class="users-name"><strong>Welcome,</strong>: <%= users.userName %></p>
+    <%}%>
+
 
 
 <div class="slider-nav">
-    <img id="first-img" class="slide-cover" src="/img/rdc photo.png" alt="caleb williams"/>
+    <img id="first-img" class="slide-cover" href="https://www.youtube.com/@TheWindyCityBreeze" src="/img/rdc photo.png" alt="caleb williams"/>
     <img id="second-img" class="slide-cover" src="/img/twcb 2.jpg" alt="">
     <img id="third-img" class="slide-cover" src="/img/Windycitysports.jpg" alt="">
     <div class="scroll-container">

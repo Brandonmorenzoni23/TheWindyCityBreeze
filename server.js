@@ -8,7 +8,7 @@ const connectDB = require("./config/database");
 const mongoose = require("mongoose")
 const mainRoutes = require('./routes/mainRoute')
 const productRoutes = require('./routes/productRoute')
-const morgan = require("morgan")
+const logger = require("morgan")
 const PORT = 3002
 
 //Use .env file in config folder
@@ -23,6 +23,9 @@ app.use(express.json());
 
 // Passport config
 require("./config/passport");
+
+//Logging
+app.use(logger("dev"));
 
 
 //Connect To Database

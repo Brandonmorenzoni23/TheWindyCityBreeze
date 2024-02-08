@@ -3,29 +3,22 @@
 <h1 class="login-header">Log In</h1>
 
 <div class="login-container">
-  <form action="/login" method="POST">
-    <div class="mb-3">
-      <label for="exampleInputEmail1"
-        >Email address</label
-      >
-      <input
+  <form class="login-form" action="/login" method="POST">
+    
+      <label>Email address</label>
+      <input 
         type="email"
         class="form-control"
-        id="exampleInputEmail1"
         aria-describedby="emailHelp"
         name="email"
       />
-    </div>
-    <div class="">
-      <label for="exampleInputPassword1" >Password</label>
-      <input
+    <label >Password</label>
+      <input 
         type="password"
         class="form-control"
-        id="exampleInputPassword1"
         name="password"
       />
-    </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
+      <button type="submit">Submit</button>
   </form>
 
   <h2>Haven't signed up yet?</h2>
