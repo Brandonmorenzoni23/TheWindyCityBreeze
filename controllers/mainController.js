@@ -5,12 +5,12 @@ const product = require("../models/product")
 
 module.exports = {
     getMain: async (req, res) => {
-      const users = await user.find({ user: req.user  })
+      const users =  user.find({ user: req.user  })
       res.render("homepage.ejs", {users: users});
     },
     getShop: async (req, res) => {
       try {
-        const products = await product.find();
+        const products = product.find();
         res.render("shop.ejs", {products: products});
       } catch (err) {
         console.log(err);
