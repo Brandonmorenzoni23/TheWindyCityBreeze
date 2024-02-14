@@ -39,8 +39,10 @@ app.use(
     secret: 'keyboard cat',
     resave: false,
     saveUninitialized: false,
-    store: MongoStore.create({ mongoUrl: 'mongodb+srv://brandonMorenzoni:brandonMorenzoni@cluster0.u9w23zf.mongodb.net/?retryWrites=true&w=majority'
+    cookie: { secure: true },
+    store: MongoStore.create({ mongoUrl: process.env.DB_STRING,
   }),
+    stringify: false,
   })
 )
 

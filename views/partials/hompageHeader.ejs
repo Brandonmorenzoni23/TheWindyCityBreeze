@@ -24,6 +24,17 @@
         <button ><a href="/shop" class="header-btn">SHOP</a></button>
         <button  ><a href="/login" class="header-btn">LOGIN</a></button>
         <button ><a href="/cart" class="header-btn">CART</a></button>
+        <button><a class="header-btn"  id="dropdown" >profile</a></button>
+         <div id="dropdown-content">
+          <% if(users) { %>
+            <div>
+                <a href="/profile">Profile</a>
+                <a href="/logout">Logout</a>
+            </div>
+         <% } else{ %>
+                <a href="/login">LOGIN</a>
+         <% } %>
+         </div>
       </div>
   </header>
 </body>

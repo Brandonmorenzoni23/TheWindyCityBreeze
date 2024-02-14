@@ -10,16 +10,19 @@ module.exports = {
     },
     getShop: async (req, res) => {
       try {
+        const users =  user.find({ user: req.user  })
         const products = product.find();
-        res.render("shop.ejs", {products: products});
+        res.render("shop.ejs", {products: products, users: users});
       } catch (err) {
         console.log(err);
       }
     },
     getContent: (req, res) => {
-      res.render("content.ejs");
+      const users =  user.find({ user: req.user  })
+      res.render("content.ejs", {users: users});
     },
     getCart: (req, res) => {
-      res.render("cart.ejs");
+      const users =  user.find({ user: req.user  })
+      res.render("cart.ejs", {users: users});
     },
 };
