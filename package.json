@@ -26,6 +26,7 @@
     "nodemon": "^3.0.2",
     "passport": "^0.6.0",
     "passport-local": "^1.0.0",
+    "shopify-api-node": "^3.13.1",
     "validator": "^13.11.0"
   }
 }

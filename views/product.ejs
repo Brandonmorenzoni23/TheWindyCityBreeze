@@ -1,5 +1,18 @@
 <%- include('partials/header') -%>
 
+<div id="dropdown-content">
+    <% if(users) { %>
+      <div>
+          <a href="/profile">Profile</a>
+          <a href="/logout">Logout</a>
+      </div>
+   <% } else{ %>
+          <a href="/login">LOGIN</a>
+   <% } %>
+   </div>
+
+
+
 <h1><%= products.name %></h1>
 <p><%= products.description %></p>
 <p><%= products.price %></p>

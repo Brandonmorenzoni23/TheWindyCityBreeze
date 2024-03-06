@@ -22,19 +22,22 @@
       <div class="btn-container">
         <button ><a href="/content" class="header-btn">CONTENT</a></button>
         <button ><a href="/shop" class="header-btn">SHOP</a></button>
-        <button  ><a href="/login" class="header-btn">LOGIN</a></button>
-        <button ><a href="/cart" class="header-btn">CART</a></button>
-        <button><a class="header-btn"  id="dropdown" >profile</a></button>
-         <div id="dropdown-content">
-          <% if(users) { %>
-            <div>
-                <a href="/profile">Profile</a>
-                <a href="/logout">Logout</a>
-            </div>
-         <% } else{ %>
-                <a href="/login">LOGIN</a>
-         <% } %>
-         </div>
+        <li id="menu-items">
+          <button><a class="header-btn">profile</a></button>
+          <ul id="dropdown">
+            <% if(users.userName) { %>
+              <div class="dropdown-items">
+                  <h4><%= users.userName %></h4>
+                  <a  href="/profile">Profile</a>
+                  <a href="/logout">Logout</a>
+              </div>
+           <% } else{ %>
+                  <div class="dropdown-items">
+                    <a href="/login">LOGIN</a>
+                  </div>
+           <% } %>
+          </ul>
+        </li>
       </div>
   </header>
 </body>

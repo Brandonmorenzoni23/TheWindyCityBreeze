@@ -5,7 +5,8 @@ const product = require("../models/product")
 
 module.exports = {
     getMain: async (req, res) => {
-      const users =  user.find({ user: req.user  })
+      console.log(req.user)
+      const users = req.user ? req.user:''
       res.render("homepage.ejs", {users: users});
     },
     getShop: async (req, res) => {

@@ -1,7 +1,6 @@
 document.getElementById('first-btn').addEventListener('click', firstImg)
 document.getElementById('second-btn').addEventListener('click', secondImg)
 document.getElementById('third-btn').addEventListener('click', thirdImg)
-document.getElementById('dropdown').addEventListener('click', dropdown)
 
 
 
@@ -25,7 +24,3 @@ function thirdImg(){
     document.getElementById('third-img').style.display = 'flex'
 }
 
-function dropdown(){
-    console.log('yah mammy')
-    document.getElementById('dropdown-content').style.display= 'block'
-}

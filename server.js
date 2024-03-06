@@ -10,6 +10,7 @@ const mainRoutes = require('./routes/mainRoute')
 const productRoutes = require('./routes/productRoute')
 const logger = require('morgan')
 const PORT = 3002
+const Shopify = require('shopify-api-node');
 
 //Use .env file in config folder
 require('dotenv').config({ path: './config/.env' })
@@ -39,12 +40,20 @@ app.use(
     secret: 'keyboard cat',
     resave: false,
     saveUninitialized: false,
-    cookie: { secure: true },
+    cookie: {
+      maxAge: 1000 * 60 * 60 * 24 * 7 // 1 week
+    },
     store: new MongoStore({ mongooseConnection: mongoose.connection
   }),
-    stringify: false,
   })
 )
+
+//Shopify connection 
+const shopify = new Shopify({
+  shopName: process.env.SHOP_NAME,
+  apiKey: process.env.API_KEY,
+  password: process.env.SHOPIFY_PASSWORD
+})
 
 // Passport middleware
 app.use(passport.initialize())
