@@ -7,6 +7,7 @@ const passport = require("passport")
 
 //Main Routes
 router.get("/", mainController.getMain)
+router.get("/profile", mainController.getProfile)
 router.get("/login", authController.getLogin)
 router.post("/login", authController.postLogin)
 router.get("/logout", authController.getLogout)

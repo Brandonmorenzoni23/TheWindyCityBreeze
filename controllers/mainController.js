@@ -19,11 +19,15 @@ module.exports = {
       }
     },
     getContent: (req, res) => {
-      const users =  user.find({ user: req.user  })
+      const users = req.user ? req.user:''
       res.render("content.ejs", {users: users});
     },
     getCart: (req, res) => {
-      const users =  user.find({ user: req.user  })
+      const users = req.user ? req.user:''
       res.render("cart.ejs", {users: users});
+    },
+    getProfile: (req, res) => {
+      const users = req.user ? req.user:''
+      res.render("profile.ejs", {users: users});
     },
 };

@@ -1,26 +1,26 @@
-<%- include('partials/loginHeader') -%>
+<%- include('partials/header') -%>
 
 <h1 class="login-header">Log In</h1>
 
 <div class="login-container">
   <form class="login-form" action="/login" method="POST">
     
-      <label>Email address</label>
+      <label class="login-form">Email address</label>
       <input 
         type="email"
-        class="form-control"
+        class="login-form"
         aria-describedby="emailHelp"
         name="email"
       />
-    <label >Password</label>
+    <label class="login-form">Password</label>
       <input 
         type="password"
-        class="form-control"
+        class="login-form"
         name="password"
       />
       <button type="submit">Submit</button>
   </form>
 
-  <h2>Haven't signed up yet?</h2>
-  <button><a href="/signup">Sign Up</a></button>
+  <h2 class="login-form">Haven't signed up yet?</h2>
+  <button ><a class="login-form" href="/signup">Sign Up</a></button>
 </div>
