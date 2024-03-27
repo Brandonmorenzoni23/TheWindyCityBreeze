@@ -4,6 +4,7 @@ document.getElementById('third-btn').addEventListener('click', thirdImg)
 
 
 
+
 function firstImg(){
     console.log("showing first img!")
     document.getElementById('second-img').style.display = 'none'
@@ -23,4 +24,15 @@ function thirdImg(){
     document.getElementById('first-img').style.display = 'none'
     document.getElementById('third-img').style.display = 'flex'
 }
+
+function dropdown() {
+    console.log("I Changed!!!")
+    document.getElementsByClassName('below999px-dropdown-items')[0].style.display = 'none' ? 'flex':'none'
+}
+
+
+function dropdownforcontent() {
+    console.log("I Changed!!!")
+}
+
 

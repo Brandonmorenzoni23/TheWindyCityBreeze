@@ -4,18 +4,19 @@ const User = require("../models/user");
 
 //GET Request
 exports.getLogin = (req, res) => {
-  console.log(req.user)
-  if (req.user) {
+  const users = req.user ? req.user:''
+  if (users === req.user) {
     return res.redirect("/");
   }
-  res.render("login.ejs");
+  res.render("login.ejs", {users: users});
 };
 exports.getSignup = (req, res) => {
-  if (req.user) {
+  const users = req.user ? req.user:''
+  if (users === req.user) {
     return res.redirect("/");
   }
   res.render("signup", {
-    title: "Create Account",
+    title: "Create Account", users: users
   });
 };
 exports.getLogout = (req, res) => {
