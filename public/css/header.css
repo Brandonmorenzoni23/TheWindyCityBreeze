@@ -223,23 +223,21 @@ button{
         background:linear-gradient(0.25turn, darkblue, grey, #3399FF);
         padding-bottom: 34rem;
         }
-    .background-vid{
-        position: absolute;
-        opacity: 1;
-        width: 151.9rem;
-        object-fit: fill;
-        height:auto;
-        display: flex;
-     }
-     .background-img{
-        display: flex;
-        width: 151rem;
-        border: 3px solid #FFF;
-        position: absolute;
-        margin-bottom: 100rem;
-        width: 151.9rem;
-        opacity: .3;
-    }
+        .background-vid{
+            position: absolute;
+            opacity: 1;
+            width: 100%;
+            height:auto;
+            display: flex;
+        }
+        .background-img{
+            display: flex;
+            width: 100%;
+            border: 3px solid #FFF;
+            position: absolute;
+            margin-bottom: 100rem;
+            opacity: .3;
+        }    
     .full-quote{
         display: flex;
         position: relative;
