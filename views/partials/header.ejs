@@ -18,25 +18,12 @@
         <button ><a href="/content" class="header-btn">CONTENT</a></button>
         <button ><a href="/shop" class="header-btn">SHOP</a></button>
         <li id="menu-items">
-          <button><a class="header-btn">profile</a></button>
-          <ul id="dropdown">
-            <% if(users.userName) { %>
-              <div class="dropdown-items">
-                  <h4><%= users.userName %></h4>
-                  <a  href="/profile">Profile</a>
-                  <a href="/logout">Logout</a>
-              </div>
-           <% } else{ %>
-                  <div class="dropdown-items">
-                    <a href="/login">LOGIN</a>
-                  </div>
-           <% } %>
-          </ul>
+          <button><a href="/aboutus" class="header-btn">About Us</a></button>
           <li>
             <li>
               <button class="rmve-btn"  onclick="dropdown()"><img class="phone-dropdown" src="/img/menu.png"/></button>
               <div class="below999px-dropdown-items">
-                <a  href="/Login">Login</a>
+                <a  href="/aboutus">About Us</a>
                 <a href="/content">Content</a>
                 <a href="/shop">Shop</a>
               </div>

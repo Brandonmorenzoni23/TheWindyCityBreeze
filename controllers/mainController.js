@@ -25,7 +25,7 @@ module.exports = {
       const users = req.user ? req.user:''
       res.render("cart.ejs", {users: users});
     },
-    getProfile: (req, res) => {
+    getAboutUs: (req, res) => {
       const users = req.user ? req.user:''
       res.render("profile.ejs", {users: users});
     },
