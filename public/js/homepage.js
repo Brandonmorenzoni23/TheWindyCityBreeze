@@ -35,4 +35,10 @@ function dropdownforcontent() {
     console.log("I Changed!!!")
 }
 
+//carousel
+
+//const firstImg= document.getElementById("scroll-container")
+
+//firstImg.for
+
 
