@@ -780,7 +780,7 @@ footer{
 
 /*content*/
 
-@media (min-width: 1000px) and (max-width: 1600px ) {
+@media (min-width: 1000px) {
     #main-vid{
         display: flex;
         width: 80rem;
@@ -913,3 +913,13 @@ footer{
 }
 
 /* store */
+
+
+/* About Us */
+
+
+    .aboutUs{
+        display: flex;
+        width: 100%;
+    }
+
