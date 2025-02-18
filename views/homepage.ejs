@@ -1,13 +1,22 @@
 <%- include('partials/hompageHeader') -%>
 
-<div class="slider-nav">
-   <a  id="first-img"  href="/signup"> <img  class="slide-cover"  src="/img/Mailinglist.png" alt="Mailinglist"/></a>
-   <a id="second-img" href="https://www.youtube.com/@TheWindyCityBreeze"> <img class="slide-cover" src="/img/connectbanner.png" alt=""></a>
-    <a id="third-img" href="/shop"><img class="slide-cover" src="/img/shopbanner.png" alt=""></a>
+<div class="carousel">
+    <div class="slider">
+        <a id="first-img" href="/signup">
+            <img class="slide-cover" src="/img/Mailinglist.png" alt="Mailinglist"/>
+        </a>
+        <a id="second-img" href="https://www.youtube.com/@TheWindyCityBreeze">
+            <img class="slide-cover" src="/img/connectbanner.png" alt="Connect"/>
+        </a>
+        <a id="third-img" href="/shop">
+            <img class="slide-cover" src="/img/shopbanner.png" alt="Shop"/>
+        </a>
+    </div>
+
     <div class="scroll-container">
-    <a id="first-btn" class="scroll-btn"></a>
-    <a id="second-btn" class="scroll-btn"></a>
-    <a id="third-btn" class="scroll-btn"></a>
+        <a id="first-btn" class="scroll-btn" onclick="changeSlide(0)"></a>
+        <a id="second-btn" class="scroll-btn" onclick="changeSlide(1)"></a>
+        <a id="third-btn" class="scroll-btn" onclick="changeSlide(2)"></a>
     </div>
 </div>
 
