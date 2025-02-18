@@ -801,7 +801,7 @@ footer{
 /* Container for Special Links */
 .special-links {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 20px;
     text-align: center;
     width: 100%;
