@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,39 +7,31 @@
     <title>TWCB</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/styles.css"> <!-- Include your CSS file -->
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/header.css"/> 
 </head>
 <body>
-    <header>
-        <div class="toggle-container">
-            <span class="mode-text">Light Mode</span>
-            <label class="switch">
-                <input type="checkbox" id="darkModeToggle">
-                <span class="slider round"></span>
-            </label>
-            <span class="mode-text">Dark Mode</span>
-        </div>
+    <header class="header-box">
+      <div class="header-name-container">
+        <a href="/"><img class="header-icon" src="/img/BREEZE LOGO V2 WHITE (1).png" alt=""></a>
+      </div>
+      <div class="btn-container">
+        <button ><a href="/content" class="header-btn">CONTENT</a></button>
+        <button ><a href="/shop" class="header-btn">SHOP</a></button>
+        <li id="menu-items">
+          <button><a href="/aboutus" class="header-btn">About Us</a></button>
+          <li>
+            <li>
+              <button class="rmve-btn"  onclick="dropdown()"><img class="phone-dropdown" src="/img/menu.png"/></button>
+              <div class="below999px-dropdown-items">
+                <a  href="/aboutus">About Us</a>
+                <a href="/content">Content</a>
+                <a href="/shop">Shop</a>
+              </div>
+              </li>
+      </div>
     </header>
-
-    <script>
-        // Check if dark mode is saved in localStorage
-        if (localStorage.getItem('darkMode') === 'enabled') {
-            document.body.classList.add('dark-mode');
-            document.getElementById('darkModeToggle').checked = true;
-        }
-
-        const toggleButton = document.getElementById('darkModeToggle');
-        toggleButton.addEventListener('change', function() {
-            if (this.checked) {
-                document.body.classList.add('dark-mode');
-                localStorage.setItem('darkMode', 'enabled');
-            } else {
-                document.body.classList.remove('dark-mode');
-                localStorage.setItem('darkMode', 'disabled');
-            }
-        });
-    </script>
 </body>
 </html>
+
 
