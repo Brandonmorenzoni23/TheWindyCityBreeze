@@ -795,6 +795,88 @@ footer{
     }
 }
 
+/* Button Design */
+
+/* Container for Special Links */
+.special-links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 800px;
+}
+
+/* Each Section for Links */
+.space-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Title Styling */
+h2 {
+    font-size: 2rem;
+    color: #3399FF;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Button Styling */
+.button-19 {
+    padding: 12px 30px;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(135deg, #ff6f61, #3399FF);
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    letter-spacing: 2px;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+/* Button Hover Effect */
+.button-19:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(51, 153, 255, 0.8), 0 0 15px rgba(255, 111, 97, 0.8);
+}
+
+/* Button Link Styling */
+.button-19 a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/* Button Active State */
+.button-19:active {
+    background: linear-gradient(135deg, #3399FF, #ff6f61);
+    box-shadow: 0 0 20px rgba(51, 153, 255, 0.8), 0 0 20px rgba(255, 111, 97, 0.8);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .special-links {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    .button-19 {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}
+
 /*content*/
 
 /* Dark Mode Support */
