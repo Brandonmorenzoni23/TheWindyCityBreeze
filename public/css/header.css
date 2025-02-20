@@ -1017,39 +1017,28 @@ body {
 
 
 
-    /* Dark Mode Test */
+/* Dark Mode Test */
 
-    /* Default Light Mode */
+/* Default Light Mode */
 body {
-    background-color: #ffffff;
     color: #000000;
     transition: background-color 0.3s, color 0.3s;
 }
 
-/* Dark Mode */
-.dark-mode {
-    background-color: #121212;
-    color: #ffffff;
+/* Dark Mode - Apply Black Background to Everything */
+.dark-mode, 
+.dark-mode * {
+    background-color: #000000 !important;
+    color: #ffffff !important;
+    border-color: #ffffff !important;
+}
+.dark-mode .logo-btn {
+    -webkit-text-stroke: 1px var(--bg-color);
 }
 
-/* Dark Mode for Header, Buttons, and Other Elements */
-.dark-mode .header-box {
-    background-color: #1e1e1e;
-    box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.2);
-}
-
-.dark-mode button {
-    background-color: #333;
-    color: #ffffff;
-    border: 1px solid #ffffff;
-}
-
+/* Ensure Links Stand Out */
 .dark-mode a {
-    color: #3399FF;
-}
-
-.dark-mode .dropdown-items {
-    background-color: #222;
+    color: #3399FF !important;
 }
 
  
