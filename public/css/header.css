@@ -220,6 +220,7 @@ button{
     .main-page-content{
         display: flex;
         flex-direction: column;
+        margin-top: 25%;
         background:linear-gradient(0.25turn, darkblue, grey, #3399FF);
         padding-bottom: 34rem;
         }
@@ -371,6 +372,7 @@ footer{
     .main-page-content{
         display: flex;
         flex-direction: column;
+        margin-top: 25%;
         background:linear-gradient(0.25turn, darkblue, grey, #3399FF);
         padding-bottom: 34rem;
         }
@@ -507,378 +509,172 @@ footer{
 }
     
 }
-@media screen and (max-width: 599px ) {
-    .main-page-content{
+@media screen and (max-width: 599px) {
+    .main-page-content {
         display: flex;
         flex-direction: column;
-        background:linear-gradient(0.25turn, darkblue, grey, #3399FF);
-        
-        }
-    .background-vid{
-        position: absolute;
-        opacity: 1;
-        width: 100%;
-        height:auto;
-        display: flex;
+        margin-top: 25%;
+        background: linear-gradient(0.25turn, darkblue, grey, #3399FF);
+        padding: 1rem;
     }
-    .background-img{
+
+    .background-vid {
+        position: absolute;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        opacity: 1;
+        z-index: -1;
+    }
+
+    .background-img {
         display: flex;
         width: 100%;
         border: 3px solid #FFF;
         position: absolute;
         margin-bottom: 100rem;
-        opacity: .3;
-        
+        opacity: 0.3;
+        z-index: -2;
     }
-    .full-quote{
+
+    video::-webkit-media-controls-start-playback-button {
+        display: none !important;
+        -webkit-appearance: none;
+    }
+
+    video {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        display: block;
+    }
+
+    .full-quote,
+    .about-us,
+    footer {
         display: none;
     }
-    .slider-nav{
+
+    .slider-nav {
         display: flex;
-        position: relative;
         width: 100%;
-        height: 25rem;
-        margin-top: 33%;
+        height: auto;
         aspect-ratio: 16/9;
-        overflow-x: hidden;
+        margin-top: 33%;
+        overflow-x: scroll;
         scroll-snap-type: x mandatory;
         scroll-behavior: smooth;
         box-shadow: 0 1.5rem 3rem -0.75rem black;
-        opacity: 1;
-        transition: transform 500ms ease 0s;
+        transition: transform 500ms ease;
     }
-    #first-img{
-        width: 600px;
+
+    #first-img {
+        width: 100%;
     }
-    .special-links{
+
+    .special-links {
         display: flex;
-        flex-direction: row;
-        position: relative;
-        background: transparent;
-        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
         margin-top: 20%;
     }
-    .special-links a{
-        background: transparent;
-        color:#f9f9f9
 
-    }
-    .special-links h2{
-        background: transparent;
+    .special-links h2 {
+        font-size: 2rem;
         color: #f9f9f9;
+        -webkit-text-stroke: 0.5px #3399FF;
+        text-align: center;
+    }
+
+    .space-links {
+        width: 90%;
+        padding: 1rem;
+        border-radius: 1rem;
+        background: rgba(255, 255, 255, 0.05);
+        text-align: center;
+    }
+
+    .button-19 {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+        padding: 1rem;
+        font-size: 1.2rem;
+        border-radius: 50px;
+        color: white;
+        background: linear-gradient(135deg, #ff6f61, #3399FF);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        border: none;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        display: block;
+        text-align: center;
+    }
+
+    .button-19:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 15px rgba(51, 153, 255, 0.6);
+    }
+
+    .button-19:active {
+        background: linear-gradient(135deg, #3399FF, #ff6f61);
+    }
+
+    .main-quote {
+        font-size: 2.5rem;
+        text-align: center;
+        margin: 1rem auto;
+        width: 90%;
+    }
+
+    .super-fan {
         font-size: 3rem;
-        margin-left: 8%;
-        margin-bottom: 20%;
-        -webkit-text-stroke: .5px #3399FF;
-}
-    
-    .space-links{
-        width: 30rem;
-        height: 22rem;
-        border-radius: 2%;
-       background: transparent;
-       
-    }
-    .about-us{
-        display: none;
+        width: 90%;
+        margin: 2rem auto 1rem;
+        text-align: center;
+        position: relative;
     }
 
-.button-19 {
-  appearance: button;
-  background-color: #1899D6;
-  border: solid transparent;
-  border-radius: 16px;
-  border-width: 0 0 4px;
-  box-sizing: border-box;
-  color: #FFFFFF;
-  cursor: pointer;
-  display: inline-block;
-  font-family: din-round,sans-serif;
-  font-size: 15px;
-  font-weight: 700;
-  letter-spacing: .8px;
-  line-height: 20px;
-  margin: 0;
-  outline: none;
-  overflow: visible;
-  padding: 13px 16px;
-  text-align: center;
-  text-transform: uppercase;
-  touch-action: manipulation;
-  transform: translateZ(0);
-  transition: filter .2s;
-  user-select: none;
-  -webkit-user-select: none;
-  vertical-align: middle;
-  white-space: nowrap;
-  width: 100%;
-}
-
-.button-19:after {
-  background-clip: padding-box;
-  background-color: #1CB0F6;
-  border: solid transparent;
-  border-radius: 16px;
-  border-width: 0 0 4px;
-  bottom: -4px;
-  content: "";
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  z-index: -1;
-}
-
-.button-19:main,
-.button-19:focus {
-  user-select: auto;
-}
-
-.button-19:hover:not(:disabled) {
-  filter: brightness(1.1);
-  -webkit-filter: brightness(1.1);
-}
-
-.button-19:disabled {
-  cursor: auto;
-}
-
-.button-19:active {
-  border-width: 4px 0 0;
-  background: none;
-}
-footer{
-    background-color: white;
-    display: none;
-}
-}
-
-
-
-
-.main-quote:first-child{
-    animation: animate 12s infinite;
-}
-
-@keyframes animate {
-    0%{
-        margin-top: 0;
+    .super-fan-btn {
+        font-size: 1.5rem;
+        padding: 1rem;
+        border: 2px solid white;
+        border-radius: 0.5rem;
+        background: white;
+        color: #3399FF;
+        margin: 1rem auto;
+        width: 80%;
+        text-align: center;
+        display: block;
     }
-    25%{
-        margin-top: -60px;
-    }
-    50%{
-        margin-top: -120px;
-    }
-    75%{
-        margin-top: -180px;
-    }
-    100%{
-        margin-top: -240px;
-    }
-}
 
-.main-quote{
-    display: flex;
-    position: relative;
-    padding-bottom: 10%;
-    flex-direction: column;
-    align-self: center;
-    justify-self: center;
-    height: 1.5rem;
-    width: 40%;
-    margin-top: 5%;
-    margin-left: 25%;
-    margin-right: 35%;
-    color:  #3399FF;
-    -webkit-text-stroke: 1px #fff;
-    background-color: transparent;
-    font-size: 4.5rem;
-    text-transform: uppercase;
-}
-
-.super-fan{
-    display: flex;
-    position: absolute;
-    background-color: transparent;
-    color: #3399FF;
-    -webkit-text-stroke: 1px #fff;
-    word-wrap: normal;
-    font-size: 6rem;
-    width: 25%;
-    margin-top: 25%;
-    margin-left: 10%;
-
-}
-
-.super-fan-btn{
-    display: flex;
-    position: absolute;
-    font-size: large;
-    border: 2px solid white;
-    border-radius: .5rem;
-    color: #3399FF;
-    background: white;
-    font-size: 3.5rem;
-}
-
-
-
-#row{
-    flex-direction: row;
-}
-
-
-/*carousel*/
-/*what img is showing*/
-/* General Carousel Styles */
-.carousel {
-    width: 100%;
-    display: flex;
-    z-index: 1;
-    overflow: hidden;
-    background-color: transparent;
-    margin-top: 30%;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
-}
-
-/* Slider */
-.slider {
-    position: relative;
-    width: 100%;
-  }
-  
-  .slide {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.6s ease, visibility 0.6s ease;
-    pointer-events: none; /* prevent clicks on hidden slides */
-    z-index: 0;
-  }
-  
-  .slide.active {
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto; /* allow clicks on active slide */
-    z-index: 1;
-  }
-  
-  
-  .slide-cover {
-    width: 100%;
-    height: auto;
-    display: fl;
-  }
-
-  .scroll-btn.active {
-    background-color: #333;
-}
-
-/* Scroll Buttons */
-.scroll-container {
-    display: flex;
-    background: transparent;
-    column-gap: 1rem;
-    position: absolute;
-    bottom: 15px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1;
-}
-
-.scroll-btn {
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    background-color: white;
-    opacity: 0.5;
-    transition: all 0.3s ease-in-out;
-    cursor: pointer;
-}
-
-.scroll-btn:hover,
-.scroll-btn.active {
-    opacity: 1;
-    background-color: blue;
-}
-
-/* Responsive */
-@media screen and (max-width: 768px) {
     .carousel {
-        max-width: 100%;
+        margin-top: 2rem;
+        border-radius: 10px;
+    }
+
+    .scroll-container {
+        margin-top: 1.5rem;
+        justify-content: center;
+    }
+
+    .scroll-btn {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: white;
+        opacity: 0.5;
+    }
+
+    .scroll-btn.active,
+    .scroll-btn:hover {
+        opacity: 1;
+        background-color: blue;
     }
 }
 
-/* Button Design */
-
-/* Container for Special Links */
-.special-links {
-    display: flex;
-    flex-direction: row;
-    justify-content:space-evenly;
-    gap: 20px;
-    text-align: center;
-    width: 100%;
-}
-
-/* Each Section for Links */
-.space-links {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-/* Title Styling */
-h2 {
-    font-size: 2rem;
-    color: #3399FF;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-/* Button Styling */
-.button-19 {
-    padding: 12px 30px;
-    border-radius: 50px;
-    font-size: 1.1rem;
-    font-weight: bold;
-    color: white;
-    background: linear-gradient(135deg, #ff6f61, #3399FF);
-    border: none;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
-    letter-spacing: 2px;
-    display: inline-block;
-    text-transform: uppercase;
-}
-
-/* Button Hover Effect */
-.button-19:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 15px rgba(51, 153, 255, 0.8), 0 0 15px rgba(255, 111, 97, 0.8);
-}
-
-/* Button Link Styling */
-.button-19 a {
-    color: white;
-    text-decoration: none;
-    display: block;
-    width: 100%;
-    height: 100%;
-}
-
-/* Button Active State */
-.button-19:active {
-    background: linear-gradient(135deg, #3399FF, #ff6f61);
-    box-shadow: 0 0 20px rgba(51, 153, 255, 0.8), 0 0 20px rgba(255, 111, 97, 0.8);
-}
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -1057,21 +853,45 @@ body {
 
 /* Dark Mode Test */
 
-/* Default Light Mode */
-body {
-    color: #000000;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-/* Dark Mode - Apply Black Background to Everything */
-.dark-mode, 
-.dark-mode * {
+/* Variables for Light Mode */
+@media (prefers-color-scheme: light) {
+    :root {
+      --bg-color: #f4f4f4;
+      --text-color: #333;
+      --border-color: #3399FF;
+    }
+  }
+  
+  /* Dark Mode - Apply to Everything */
+  .dark-mode,
+  .dark-mode * {
     background-color: #000000 !important;
     color: #ffffff !important;
     border-color: #3399FF !important;
-}
-
-/* Ensure Links Stand Out */
-.dark-mode a {
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  
+  /* Ensure Buttons Look Good in Dark Mode */
+  .dark-mode .button-19,
+  .dark-mode .super-fan-btn {
+    background: linear-gradient(135deg, #ff6f61, #3399FF) !important;
+    color: white !important;
+    border: none !important;
+    box-shadow: none !important;
+  }
+  
+  /* Prevent dark halos on headers and text */
+  .dark-mode h1,
+  .dark-mode h2,
+  .dark-mode h3,
+  .dark-mode p,
+  .dark-mode span {
+    background: transparent !important;
+    text-shadow: none !important;
+  }
+  
+  /* Ensure Links Stand Out */
+  .dark-mode a {
     color: #3399FF !important;
-}
+  }
