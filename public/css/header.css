@@ -302,7 +302,9 @@ button{
         margin-left: 40%;
         margin-right: 37%;
         font-size: 8rem;
-        background-color: transparent;
+    }
+    body .full-quote {
+        background-color: transparent !important;
     }
     .slider-nav{
         display: flex;
