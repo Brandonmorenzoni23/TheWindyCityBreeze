@@ -747,13 +747,13 @@ footer{
 /*content*/
 
 /* Dark Mode Support */
-@media (prefers-color-scheme: light) {
+/* @media (prefers-color-scheme: light) {
     :root {
         --bg-color: #f4f4f4;
         --text-color: #333;
         --border-color: #3399FF;
     }
-}
+} */
 
 /* Global Styles */
 body {
@@ -906,15 +906,15 @@ body {
 /* Dark Mode Test */
 
 /* Variables for Light Mode */
-@media (prefers-color-scheme: light) {
+/* @media (prefers-color-scheme: light) {
     :root {
       --bg-color: #f4f4f4;
       --text-color: #333;
       --border-color: #3399FF;
     }
-  }
+  } */
   
-  /* Dark Mode - Apply to Everything */
+  /* Dark Mode - Apply to Everything
   .dark-mode,
   .dark-mode * {
     background-color: #000000 !important;
@@ -925,7 +925,7 @@ body {
   }
   
   /* Ensure Buttons Look Good in Dark Mode */
-  .dark-mode .button-19,
+  /* .dark-mode .button-19,
   .dark-mode .super-fan-btn {
     background: linear-gradient(135deg, #ff6f61, #3399FF) !important;
     color: white !important;
@@ -934,7 +934,7 @@ body {
   }
   
   /* Prevent dark halos on headers and text */
-  .dark-mode h1,
+  /* .dark-mode h1,
   .dark-mode h2,
   .dark-mode h3,
   .dark-mode p,
@@ -944,6 +944,20 @@ body {
   }
   
   /* Ensure Links Stand Out */
-  .dark-mode a {
+  /* .dark-mode a {
     color: #3399FF !important;
   }
+
+  .dark-mode .button-19,
+.dark-mode button,
+.dark-mode input[type="button"],
+.dark-mode input[type="submit"],
+.dark-mode .super-fan-btn {
+  background: linear-gradient(135deg, #ff6f61, #3399FF) !important;
+  background-color: #3399FF !important; /* fallback */
+  /* color: #fff !important;
+  border: none !important;
+  box-shadow: none !important;
+  text-shadow: none !important;
+  outline: none !important;
+} */  */ */ */
