@@ -222,7 +222,7 @@ button{
 .carousel {
     width: 100%;
     display: flex;
-    z-index: 1;
+    z-index: 4;
     overflow: hidden;
     background-color: transparent;
     margin-top: 28%;
@@ -308,6 +308,7 @@ button{
             width: 100%;
             height:auto;
             display: flex;
+            z-index: 1;
         }
         .background-img{
             display: flex;
@@ -462,6 +463,7 @@ footer{
         width: 100%;
         height:auto;
         display: flex;
+        z-index: 1;
     }
     .background-img{
         display: flex;
@@ -604,7 +606,7 @@ footer{
         height: auto;
         object-fit: cover;
         opacity: 1;
-        z-index: -1;
+        z-index: 1;
     }
 
     .background-img {
@@ -614,7 +616,7 @@ footer{
         position: absolute;
         margin-bottom: 100rem;
         opacity: 0.3;
-        z-index: -2;
+        z-index: 2;
     }
 
     video::-webkit-media-controls-start-playback-button {
