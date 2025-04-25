@@ -299,7 +299,7 @@ button{
     .main-page-content{
         display: flex;
         flex-direction: column;
-        margin-top: 25%;
+        margin-top: 28%;
         background:linear-gradient(0.25turn, darkblue, grey, #3399FF);
         padding-bottom: 34rem;
         }
@@ -309,7 +309,8 @@ button{
             width: 100%;
             height:auto;
             display: flex;
-            z-index: 1;
+            z-index: -1;
+
         }
         .background-img{
             display: flex;
@@ -454,7 +455,7 @@ footer{
     .main-page-content{
         display: flex;
         flex-direction: column;
-        margin-top: 25%;
+        margin-top: 28%;
         background:linear-gradient(0.25turn, darkblue, grey, #3399FF);
         padding-bottom: 34rem;
         }
@@ -464,7 +465,8 @@ footer{
         width: 100%;
         height:auto;
         display: flex;
-        z-index: 1;
+        z-index: -1;
+
     }
     .background-img{
         display: flex;
@@ -596,7 +598,7 @@ footer{
     .main-page-content {
         display: flex;
         flex-direction: column;
-        margin-top: 25%;
+        margin-top: 28%;
         background: linear-gradient(0.25turn, darkblue, grey, #3399FF);
         padding: 1rem;
     }
@@ -607,7 +609,7 @@ footer{
         height: auto;
         object-fit: cover;
         opacity: 1;
-        z-index: 1;
+        z-index: -1;
     }
 
     .background-img {
