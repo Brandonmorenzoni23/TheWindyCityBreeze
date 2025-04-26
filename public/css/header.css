@@ -238,15 +238,18 @@ button{
   }
   
   .slide {
-    position: absolute;
-    top: 0;
-    left: 0;
+    display: flex;
+    position: relative;
     width: 100%;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.6s ease, visibility 0.6s ease;
-    pointer-events: none; /* prevent clicks on hidden slides */
-    z-index: 0;
+    height: 30rem;
+    margin-top: 33%;
+    aspect-ratio: 16/9;
+    overflow-x: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem -0.75rem black;
+    opacity: 1;
+    transition: transform 500ms ease 0s;
   }
   
   .slide.active {
@@ -260,7 +263,6 @@ button{
   .slide-cover {
     width: 100%;
     height: auto;
-    display: fl;
   }
 
   .scroll-btn.active {
