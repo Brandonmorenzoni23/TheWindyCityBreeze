@@ -248,7 +248,6 @@ button{
     pointer-events: none; /* prevent clicks on hidden slides */
     z-index: 0;
     height: 55rem;
-    margin-top: 36%;
     aspect-ratio: 16/9;
     overflow-x: hidden;
   }
@@ -305,6 +304,7 @@ button{
         margin-top: 28%;
         background:linear-gradient(0.25turn, darkblue, grey, #3399FF);
         padding-bottom: 34rem;
+        z-index: 5;
         }
         .background-vid{
             position: absolute;
@@ -462,6 +462,7 @@ footer{
         margin-top: 28%;
         background:linear-gradient(0.25turn, darkblue, grey, #3399FF);
         padding-bottom: 34rem;
+        z-index: 5;
         }
     .background-vid{
         position: absolute;
@@ -606,6 +607,7 @@ footer{
         margin-top: 28%;
         background: linear-gradient(0.25turn, darkblue, grey, #3399FF);
         padding: 1rem;
+        z-index: 5;
     }
 
     .background-vid {
@@ -747,7 +749,6 @@ footer{
     }
 
     .scroll-container {
-        margin-top: 1.5rem;
         justify-content: center;
     }
 
